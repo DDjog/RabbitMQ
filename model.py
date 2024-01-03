@@ -9,9 +9,9 @@ class Contact(Document):
 
 
 def get_email_for_id(_id):
-    _rslt = Contact.objects(pk=_id).first()
+    _email_for_id = Contact.objects(pk=_id).first()
 
-    return _rslt.email
+    return _email_for_id.email
 
 
 def set_email_sent_flag_for_id(_id):
